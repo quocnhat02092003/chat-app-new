@@ -1,9 +1,28 @@
+@media screen and (max-width:480px)  {
+    .navbar .logo{
+        display: none;
+    }
+    .userchatInfo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px)  {
+    .navbar .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px){
+    
+}
+
 *{
     margin: 0;
 }
 
 body{
-    background-color: #6699FF;
+    /* background-color: #6699FF; */
 }
 
 .formContainer{
@@ -191,6 +210,7 @@ body{
     color: white;
     background-color: #5b5d8b;
     border-top-right-radius:10px ;
+    padding: 0px 10px 0px 10px;
 }
 
 .chatIcon{
@@ -207,10 +227,103 @@ body{
     background-color: gray;
     padding: 10px;
     height: calc(100% - 132px);
+    overflow-y: scroll;
 }
 
 .input{
-    background-color: #5b5d8b;
+    background-color: white;
     height: 42px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-right-radius: 10px;
+}
+
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.send{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.send img{
+    height: 24px;
+    cursor: pointer;
+}
+
+.send button{
+    background-color: #8da4f1;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message{
+    display: flex;
+    gap: 20px;
+}
+
+.owner{
+    flex-direction: row-reverse;
+}
+
+
+.messageInfo{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    font-weight: 300;
+    color: white;
+}
+
+.messageInfo img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.messageContent{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.messageContent p{
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    max-width: max-content;
+}
+
+.messageContent img {
+    width: 50%;
+}
+
+.owner p{
+    background-color: #8da4f1;
+    color: white;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.hoctap{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }

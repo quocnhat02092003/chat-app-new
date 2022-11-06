@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Register from "./Register";
 
-const Login = (props) => {
+const Login = () => {
   return (
     <div className="formContainer">
         <div className="Login">
@@ -13,7 +13,7 @@ const Login = (props) => {
                 <input className="passwordLogin" type="password" placeholder="Password"  />
                 <button className="buttonLogin" type="submit">Login</button>
             </form>
-            <p>You don't have an account?  <Link to={"/register"}>Register Now</Link></p>
+            <p>You don't have an account?  <NavLink to={"/Register"}>Register Now</NavLink></p>
         </div>
     </div>
   );
